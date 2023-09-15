@@ -75,7 +75,7 @@ const ShowCaseCarousel = () => {
                     alt=""
                     width={200}
                     height={200}
-                    className="w-[16vh] md:w-full animate-spin duration-6000 h-auto"
+                    className="w-[16vh] md:w-full animate-spin duration-10000 h-auto"
                   />
                 </ImageLayout>
                 <ContentLayout>
