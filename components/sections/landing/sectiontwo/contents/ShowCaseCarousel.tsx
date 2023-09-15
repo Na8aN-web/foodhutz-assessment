@@ -16,9 +16,14 @@ import {
 import Image from "next/image";
 import { o5 } from "@/assets";
 import { WH, WHSpace } from "@/utils/screensize";
+import { useState, useEffect } from "react";
 
 const ShowCaseCarousel = () => {
-  const screenWidth = window.innerWidth;
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+  }, []);
 
   const ShowCaseCarouselStyles = {
     Flex: tw.div`flex items-center justify-center`,
@@ -31,7 +36,7 @@ const ShowCaseCarousel = () => {
     <div className="">
       <Swiper
         direction="horizontal"
-        speed={10000}
+        speed={5000}
         loop
         slidesPerView={4}
         spaceBetween={WHSpace(screenWidth)}
@@ -66,8 +71,8 @@ const ShowCaseCarousel = () => {
       >
         {Array(7)
           .fill("")
-          .map((i) => (
-            <SwiperSlide key={i} style={{ width: "100%" }}>
+          .map((index) => (
+            <SwiperSlide key={index} style={{ width: "100%" }}>
               <Flex>
                 <ImageLayout>
                   <Image
@@ -81,8 +86,7 @@ const ShowCaseCarousel = () => {
                 <ContentLayout>
                   <h1 className="text-lg font-medium">Vegeterian</h1>
                   <p className="leading-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae, delectus.
+                    Lorem ipsum dolor sit amet 
                   </p>
                 </ContentLayout>
               </Flex>

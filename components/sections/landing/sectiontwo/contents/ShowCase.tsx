@@ -114,9 +114,9 @@ const ShowCase = () => {
               {/*  */}
               <Col>
                 {ShowCaseData.data.map(
-                  ({ description, id, image, title }, _) => (
+                  ({ description, image, title }, index) => (
                     <>
-                      <Row key={id}>
+                      <Row key={index}>
                         <div className=" border border-[#bf9444] rounded-xl flex flex-row items-center justify-center p-2">
                           <Image src={image} alt="" width={50} height={50} />
                         </div>

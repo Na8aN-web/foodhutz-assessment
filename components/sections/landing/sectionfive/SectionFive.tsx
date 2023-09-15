@@ -50,9 +50,9 @@ const SectionFive = () => {
           <Grid>
             {Array(3)
               .fill("")
-              .map((_) => (
+              .map((index) => (
                 <>
-                  <Card  key={_}>
+                  <Card  key={index}>
                     <Image
                       src={o8}
                       alt=""

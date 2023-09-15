@@ -53,11 +53,11 @@ const SectionSix = () => {
           <Grid>
             {Array(3)
               .fill("")
-              .map((_) => (
+              .map((index) => (
                 <>
                   {/* data-aos="flip-right" data-aos-duration="1000" */}
-                  <GridLayout>
-                    <div className="w-full border border-slate-200 rounded-2xl" key={_}>
+                  <GridLayout key={index}>
+                    <div className="w-full border border-slate-200 rounded-2xl" >
                       <Image
                         src={o9}
                         className="w-full h-full align-middle rounded-t-2xl"

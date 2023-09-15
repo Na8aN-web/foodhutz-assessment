@@ -32,8 +32,8 @@ const ReusableForm: React.FC<FormProps<any>> = ({
 
   return (
     <form onSubmit={formik.handleSubmit} className={cx(fields.FormStyles)}>
-      {fields.data.map((field) => (
-        <div key={field.name} className={cx("w-full flex items-center")}>
+      {fields.data.map((field, index) => (
+        <div key={index} className={cx("w-full flex items-center")}>
           <label htmlFor={field.name} className={cx(!showLabel && "hidden")}>
             {field.label}
           </label>

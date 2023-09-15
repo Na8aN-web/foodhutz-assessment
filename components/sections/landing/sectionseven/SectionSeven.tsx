@@ -44,9 +44,9 @@ const SectionSeven = () => {
         <Grid>
           {Array(6)
             .fill("")
-            .map((_) => (
+            .map((index) => (
               <>
-                <Card key={_}>
+                <Card key={index}>
                   <input
                     className="w-full bg-[#09161d] border border-slate-100 outline-none focus:border-[#bf9444] focus-within:border-[#bf9444] transition duration-100 rounded-[50px] px-4 py-4 placeholder:text-base text-base text-white font-normal"
                     placeholder="Name*"

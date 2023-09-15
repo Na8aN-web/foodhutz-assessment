@@ -53,9 +53,9 @@ const SectionEight = () => {
           <Grid>
             {Array(3)
               .fill("")
-              .map((_) => (
+              .map((index) => (
                 <>
-                  <div className="col-span-6 md:col-span-2 group" key={_}>
+                  <div className="col-span-6 md:col-span-2 group" key={index}>
                     <CardLayout>
                       <ImageLayout>
                         <div className="h-20 w-20 flex items-center justify-center bg-white rounded-lg absolute top-4 right-8 md:right-16 transition duration-300">
@@ -79,12 +79,12 @@ const SectionEight = () => {
                         />
                       </ImageLayout>
                       <Center className="p-20 rounded-xl border border-slate-100 gap-y-6 relative -mt-16">
-                        <p className="group flex items-center gap-x-3 transition duration-200 text-[#5e5e5e]">
+                        <div className="group flex items-center gap-x-3 transition duration-200 text-[#5e5e5e]">
                           <div className="w-10 h-[2px] bg-[#5e5e5e] hover:bg-[#bf9444]" />
                           <span className="hover:text-[#bf9444]">
                             By Clone Watson
                           </span>
-                        </p>
+                        </div>
                         <p className="text-lg md:text-3xl text-center text-black">
                           To Make Good Health Take Nutrition Food.
                         </p>

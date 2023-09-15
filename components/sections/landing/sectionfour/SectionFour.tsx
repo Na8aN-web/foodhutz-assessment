@@ -55,9 +55,9 @@ const SectionFour = () => {
         <Grid>
           {Array(6)
             .fill("")
-            .map((_) => (
+            .map((index) => (
               <>
-                <Card  key={_}>
+                <Card  key={index}>
                   <CardLayout>
                     <Image
                       className="w-full h-auto object-cover align-middle rounded-t-2xl"

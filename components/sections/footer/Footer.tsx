@@ -29,10 +29,10 @@ const Footer = () => {
                 </Heading>
                 {Array(5)
                   .fill("")
-                  .map((_) => (
+                  .map((index) => (
                     <>
                       <div
-                        key={_}
+                        key={index}
                         className="flex items-center gap-3 md:gap-x-20 text-sm md:text-base"
                       >
                         <div className="group relative">
@@ -40,7 +40,7 @@ const Footer = () => {
                            Item
                           </p>
                           <p className="hidden whitespace-nowrap text-[#bf9444] group-hover:flex items-center gap-x-2 absolute left-0 top-0 transform translate-x-full group-hover:translate-x-0 transition-transform duration-2000 ease-in-out cursor-pointer">
-                            <div className="w-10 h-[2px] bg-[#bf9444]" />
+                            <span className="w-10 h-[2px] bg-[#bf9444]" ></span>
                             <span>Food</span>
                           </p>
                         </div>
@@ -49,7 +49,7 @@ const Footer = () => {
                             Popular Item
                           </p>
                           <p className="hidden whitespace-nowrap text-[#bf9444] group-hover:flex items-center gap-x-2 absolute left-0 top-0 transform translate-x-full group-hover:translate-x-0 transition-transform duration-2000 ease-in-out cursor-pointer">
-                            <div className="w-10 h-[2px] bg-[#bf9444]" />
+                            <span className="w-10 h-[2px] bg-[#bf9444]" ></span>
                             <span>Popular Item</span>
                           </p>
                         </div>
@@ -129,10 +129,10 @@ const Footer = () => {
                 </Heading>
                 {Array(5)
                   .fill("")
-                  .map((_) => (
+                  .map((index) => (
                     <>
                       <div
-                        key={_}
+                        key={index}
                         className="flex items-center gap-3 md:gap-x-5 text-sm md:text-base"
                       >
                         <Paragraph>Phone </Paragraph>

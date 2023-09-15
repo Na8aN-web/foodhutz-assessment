@@ -16,7 +16,7 @@ const SectionThreeCarousel = () => {
     <div className="flex flex-row justify-center items-center gap-10">
       {Array(3)
         .fill("")
-        .map((i, index) => (
+        .map(( index) => (
           <Dish key={index}>
             <ImageFrame>
               <Image
@@ -27,7 +27,7 @@ const SectionThreeCarousel = () => {
                 height={350}
               />
               <Content className="">
-                <p className="relative z-1 text-[#09161d] after:bg-white after:h-[60px] after:w-[60px] after:rounded-sm after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:-rotate-45 after:z-[-1] after:transition-[0.35s]">
+                <p className=" rounded relative z-1 text-[#09161d] after:bg-white after:h-[60px] after:w-[60px] after:rounded-sm after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:-rotate-45 after:z-[-1] after:transition-[0.35s]">
                   $32
                 </p>
               </Content>
