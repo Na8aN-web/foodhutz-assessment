@@ -67,7 +67,6 @@ const LoadingModal: React.FC<ModalProps> = ({
           >
             <div className="inline-block w-full max-w-lg p-6 my-8 overflow-hidden text-left align-middle transform bg-white shadow-xl rounded-lg">
               <div className="text-center">
-                <p className="text-lg font-semibold">Loading...</p>
                 <div className="my-4">
                   <div className="relative pt-1">
                     <div className="flex mb-2 items-center justify-between">
